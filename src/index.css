@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal-base: #0F1115;
+  --color-charcoal-surface: #171A21;
+  --color-charcoal-elevated: #1F242E;
+  --color-charcoal-border: #2D3442;
+  --color-gold-champagne: #D4AF37;
+  --color-gold-light: #E5C568;
+  --color-gold-muted: #8E7A32;
+  --color-gold-glow: rgba(212, 175, 55, 0.15);
+  --color-alabaster: #F8FAFC;
+  --color-slate-titanium: #94A3B8;
+  --color-whatsapp: #25D366;
+
+  --font-alexandria: 'Alexandria', sans-serif;
+  --font-ibm-arabic: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+/* Base resets & typography */
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-ibm-arabic);
+  background-color: var(--color-charcoal-base);
+  color: var(--color-alabaster);
+  overflow-x: hidden;
+}
+
+/* Headings use Alexandria */
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: var(--font-alexandria);
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F1115;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3442;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
